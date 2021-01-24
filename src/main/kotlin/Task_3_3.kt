@@ -19,6 +19,7 @@ class eBook(format:String = "text", title: String, author: String, ): Book(title
     private var wordCount: Int = 0
     override fun readPage() {
         super.readPage()
+
         wordCount += 250
     }
 }
