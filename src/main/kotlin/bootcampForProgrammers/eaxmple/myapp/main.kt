@@ -8,5 +8,17 @@ fun builtAquarium() {
 }
 
 fun main(args: Array<String>) {
-    builtAquarium()
+//    builtAquarium()
+    makeFish()
+}
+
+fun makeFish() {
+    val shark = Shark()
+    val pleco = Plecostomus()
+
+    println("Shark: ${shark.color}")
+    shark.eat()
+
+    println("Pleco: ${pleco.color}")
+    pleco.eat()
 }

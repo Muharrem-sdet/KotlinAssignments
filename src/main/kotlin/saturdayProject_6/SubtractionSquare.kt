@@ -1,4 +1,5 @@
 package saturdayProject_6
+
 /*
    Given one method name is substSquare
    This method get two ints as parameter
