@@ -1,5 +1,7 @@
 package Task_3_4
 
+import bootcampForProgrammers.eaxmple.myapp.Color
+
 /*
 Task 3.4 Abstract and Interface
 Let's go back to your spices. Make Spice an abstract class, and then create some subclasses that are actual spices.
@@ -15,7 +17,7 @@ So we can create an Interface, Grinder, that implements the grind() method. Do t
 Then add the Grinder interface to the Curry class.
  */
 
-abstract class Spice(val name: String, val levelOfSpiciness: String = "mild") {
+sealed class Spice(val name: String, val levelOfSpiciness: String = "mild") {
     val heat: Int
         get() = when (levelOfSpiciness) {
             "chilly" -> 5
@@ -66,11 +68,11 @@ Using the provided code from the lesson for guidance, add a yellow color to Curr
  */
 
 interface SpiceColor {
-    val color: String
+    val color: Color
 }
 
 object yellowSpiceColor : SpiceColor {
-    override val color: String = "yellow"
+    override val color: Color = Color.YELLOW
 }
 
 fun main() {
