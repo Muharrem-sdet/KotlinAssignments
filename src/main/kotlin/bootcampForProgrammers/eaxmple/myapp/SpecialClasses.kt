@@ -12,5 +12,7 @@ fun main() {
     println(Directions.NORTH.name)
     println(Directions.NORTH.ordinal)
     println(Directions.NORTH.degrees)
+
+    print(Color.YELLOW.rgb)
 }
 

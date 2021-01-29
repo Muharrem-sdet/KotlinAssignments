@@ -1,7 +1,7 @@
 /*
 Task 3.6
 In SpiceColor, change the type of color from String to the Color class, and set the appropriate color in YellowSpiceColor.
-Hint: The color code for yellow is YELLOW(0xFFFF00)
+Hint: The color code for yellow is 0xFFFF00
 
 Make Spice a sealed class.
 What is the effect of doing this?
